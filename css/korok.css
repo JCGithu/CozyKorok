@@ -91,6 +91,20 @@ h2 {
           align-items: center;
 }
 
+@-webkit-keyframes SlideUp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes SlideUp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .nameBlock {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -112,7 +126,7 @@ h2 {
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nameBlock span {
@@ -135,6 +149,116 @@ h2 {
   font-size: 1.3rem;
   border-radius: 100%;
   background-color: #CCB59D;
+}
+
+.nameBlock:nth-child(1n) {
+  -webkit-transform: translateY(1900px);
+          transform: translateY(1900px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.nameBlock:nth-child(2n) {
+  -webkit-transform: translateY(1860px);
+          transform: translateY(1860px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.nameBlock:nth-child(3n) {
+  -webkit-transform: translateY(1820px);
+          transform: translateY(1820px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.nameBlock:nth-child(4n) {
+  -webkit-transform: translateY(1780px);
+          transform: translateY(1780px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.nameBlock:nth-child(5n) {
+  -webkit-transform: translateY(1740px);
+          transform: translateY(1740px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.nameBlock:nth-child(6n) {
+  -webkit-transform: translateY(1700px);
+          transform: translateY(1700px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.nameBlock:nth-child(7n) {
+  -webkit-transform: translateY(1660px);
+          transform: translateY(1660px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.nameBlock:nth-child(8n) {
+  -webkit-transform: translateY(1620px);
+          transform: translateY(1620px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.nameBlock:nth-child(9n) {
+  -webkit-transform: translateY(1580px);
+          transform: translateY(1580px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+
+.nameBlock:nth-child(10n) {
+  -webkit-transform: translateY(1540px);
+          transform: translateY(1540px);
+  -webkit-animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+          animation: SlideUp 2s cubic-bezier(0, 0.525, 0.005, 1.005);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 input {
