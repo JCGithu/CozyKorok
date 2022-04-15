@@ -86,7 +86,7 @@ h2{
   align-items: baseline;
   background-color: rgba(256,256,256,0.4);
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 0.3rem;
   border-radius: 1rem;
   font-size: 1.2rem;
   span{
@@ -103,7 +103,7 @@ h2{
     border-radius: 100%;
     background-color: #CCB59D;
   }
-  @for $i from 1 through 10 {
+  @for $i from 1 through 12 {
     &:nth-child(#{$i}n) {
       transform: translateY(#{1500 + ((11 - $i) * 40)}px);
       animation: SlideUp 2s cubic-bezier(0.000, 0.525, 0.005, 1.005);

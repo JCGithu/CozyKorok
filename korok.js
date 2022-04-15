@@ -46,6 +46,7 @@ function sortObject(o){
 function maxValues(o, n) {
   const values = Object.values(o).sort((a, b) => b - a);
   if (values.length <= n) return sortObject(o);
+  console.log(n);
   const maxN = values[n - 1];
   let reduced = Object.entries(o).reduce((o, [k, v]) => v >= maxN ? { ...o, [k]: v } : o, {})
   return sortObject(reduced);
@@ -55,7 +56,7 @@ function iniLoaded(data) {
   console.log(data);
   let leaderboardData = parseINIString(data).users;
   console.log(leaderboardData);
-  let top10 = maxValues(leaderboardData, 10);
+  let top10 = maxValues(leaderboardData, 9);
   let leaderboardTarget = document.getElementById('leaderboard');
   for (let value in top10){
     let block = document.createElement('div');
