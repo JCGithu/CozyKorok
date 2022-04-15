@@ -1,0 +1,160 @@
+@font-face {
+  font-family: Zelda1;
+  src: url("../dist/HyliaSerifBeta-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Zelda2;
+  src: url("../dist/TheWildBreathofZelda.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Zelda3;
+  src: url("../dist/BotW_Sheikah.ttf") format("opentype");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CCB59D;
+}
+
+#bg1 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-filter: blur(1px) opacity(0.52) sepia(0.52) saturate(1.3) url("#grain");
+          filter: blur(1px) opacity(0.52) sepia(0.52) saturate(1.3) url("#grain");
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.banner {
+  z-index: 2;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: 'Zelda2';
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 1rem;
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+#leaderboard {
+  font-family: 'Zelda1';
+  z-index: 2;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nameBlock {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.nameBlock span {
+  padding: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nameBlock .number {
+  color: white;
+  width: 1.5rem;
+  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  background-color: #CCB59D;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: #92c582;
+  color: white;
+  font-weight: normal;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-family: 'Zelda3';
+  -webkit-box-shadow: 2px 2px 4px #536f5085;
+          box-shadow: 2px 2px 4px #536f5085;
+  cursor: pointer;
+}
+
+#korok {
+  width: 1.5rem;
+  padding: 0.5rem;
+}
+/*# sourceMappingURL=korok.css.map */
